@@ -1,0 +1,154 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+     background-color: rgb(202, 216, 225);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+Body{
+  
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.logo{
+    margin:10px;
+    padding:5px;
+    border: 0 solid white;
+    border-radius: 10px;
+
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration:none;
+}
+nav ul li a:hover{
+    font-size: larger;
+    background-color: rgb(243, 200, 200);
+}
+
+button{
+    background-color: rgb(18,155,155);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border:  1px solid white;
+    border-radius: 40px;
+    font-weight: 600;
+    width: fit-content;
+}
+button:hover{
+    background-color :rgb(230, 225, 225);
+    color:#000000;
+    border: 2px solid rgb(0, 0, 0);
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: auto;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+nav ul li:hover{
+    /* text-decoration: none; */
+    font-weight: 900;
+    color: rgb(0, 0, 255);
+}
+.search{
+display: flex;
+gap: 35px;
+}
+.search :hover{
+    font-size:15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(240, 248, 255);
+
+}
+input{
+    padding: 4px 10px;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+}
+.hero-left  h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+/* .h1{
+    color: aqua;
+    display: block-inline;
+} */
+.hero-left{
+    margin:auto;
+    padding: 2% 1% 5% 5%;
+}
+.hero-left span{
+    color: rgb(7, 214, 214);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.hero-left p{
+   font-weight: 500; 
+}
+.hero-left p span{
+    font-weight: 700; 
+    font-size: 25px;
+    color: rgb(14, 134, 134);
+ }
+  .hero-right{ 
+display: flex;
+flex-direction: column;
+width: 40%;
+align-items: center;
+justify-content: center;
+gap: 30px;
+ }
+ .hero-right button{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ }
+ .hero-right img{
+    height: 300px;
+    width:300px;
+    border-radius: 50%;
+ }
+ footer{
+    display : flex;
+    align-items: center;
+    padding:20px 0;
+    justify-content: space-around;
+ }
+ footer p{
+     font-weight: 600;
+ }
+ footer ul{
+    display: flex;
+    gap: 30px;
+ }
+ footer ul li a i:hover{
+    font
+
+ }
+ .font{
+    
+ }
+ @media screen (max-width= 600px){
+background-color =red;
+ }
