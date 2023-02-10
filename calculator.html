@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            font-size: 62.5%;
+        }
+        .header{
+            font-size: 3.5rem;
+            text-align: center;
+        }
+         table tr td{    /* decendent selector */
+            font-size: 3rem;
+        }
+      .table{
+            width:50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header"> To Make Calculator</h1><br><br>
+    <div>
+        <table align="center" class="table">
+            <tr>
+                <td>
+                    <label for="first">Enter the first no. : </label>
+                </td>
+                <td>
+                    <input type="text" id="first" name="first">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="second">Enter the second no.: </label>
+                </td>
+                <td>
+                    <input type="text" id="second" name="second">
+                </td>
+            </tr>
+            <tr>
+                <td id="symbol"></td>
+                <td id="value"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Reset" onclick="reset_data()">
+                    <input type="button" value="+" onclick="add_data()">
+                    <input type="button" value="-" onclick="sub_data()">
+                    <input type="button" value="*" onclick="multi_data()">
+                    <input type="button" value="/" onclick="div_data()">
+                    <input type="button" value="%" onclick="mod_data()">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function add_data(){
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a+b;
+            document.getElementById("symbol").innerHTML="Add";
+            document.getElementById("value").innerHTML=sum;
+        }
+        function sub_data(){
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a-b;
+            document.getElementById("symbol").innerHTML="Subtract";
+            document.getElementById("value").innerHTML=sum;
+        }
+        function multi_data(){
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a*b;
+            document.getElementById("symbol").innerHTML="Multiply";
+            document.getElementById("value").innerHTML=sum;
+        }
+        function div_data(){
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a/b;
+            document.getElementById("symbol").innerHTML="Divide";
+            document.getElementById("value").innerHTML=sum;
+        }
+        function mod_data(){
+            let a = parseInt(document.getElementById("first").value);
+            let b = parseInt(document.getElementById("second").value);
+            let sum = a%b;
+            document.getElementById("symbol").innerHTML="Modulos";
+            document.getElementById("value").innerHTML=sum;
+        }
+
+        function reset_data(){
+                document.getElementById("first").value="";
+                document.getElementById("second").value="";
+                document.getElementById("symbol").innerHTML="";
+                document.getElementById("value").innerHTML="";
+            }
+    </script>
+</body>
+</html>
