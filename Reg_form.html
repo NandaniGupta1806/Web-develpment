@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <center>
+  <form>
+     <table BORDER="4" width="40%" align="center" Height="100" cellspacing="5" cellpadding="10">
+        <tr>
+          <th bgcolor="yellow" colspan="2"><h1>Registration Form</h1></th>
+        </tr>
+     <tbody >
+         <tr bgcolor="skyblue">
+             <br>
+          <td> <label for="n"> Enter Name</label> </td>
+          <td><input type="text" name="Name" id="n" valve="name"/></td>
+        </tr>
+        <tr bgcolor="skyblue" >
+         <td> <label for="pass">Enter Password </label> </td>
+         <td><input type="password" name="pass" id="pass" valve="pass"/></td>
+        </tr>
+          <tr bgcolor="skyblue">
+          <td> <label for="add"> Enter Address</label> </td>
+            <td><textarea maxlength="20" cols="20" id="add"rows="5"></textarea></td>
+        </tr>
+        <tr bgcolor="skyblue">
+    <td> Select Game </td>
+    <td>
+    <input type="checkbox" name="choice" valve="hockey"/>Hockey
+    <br>
+    <input type="checkbox" name="choice" valve="football" />FootBall
+    <br>
+    <input type="checkbox" name="choice" valve="Badminton" />Badminton
+    <br>
+    <input type="checkbox" name="choice" valve="Cricket" />Cricket
+    <br>
+    <input type="checkbox" name="choice" valve="volleyball" />Volleyball
+</td>
+    </tr>
+<tr bgcolor="skyblue">
+    <td>  Gender </td>
+    <td><input type="radio" id="g" name="male" valve="m">Male</input>
+    <input type="radio" name="female"  valve="f">Female</input></td>
+</tr>
+<tr bgcolor="skyblue">
+    <td>  Select your Age </td>
+    <td> <select name="dropdown">
+        <option value="Select" selected>Select</option>
+        <option value=" old"> Above 60</option>
+        <option value="Adult">Above 18</option>
+        <option value="Child">Below 18</option>
+    </select> </td>
+</tr>
+<tr bgcolor="skyblue">
+    <td><label for="f">Select Photo</label> </td></form>
+    <td> <input type="file" id="f" name="file" valve="f"></td>
+</tr>
+<tr bgcolor="skyblue">
+    <td colspan="2">
+                        <center><input type="button"  name="b" value="Click Me"/>
+                        <input type="reset"  name="r"  value="Reset"/>
+                        <input type="submit" name="b"  value="Submit Form"/></center>
+    </td>
+</tr>
+</tbody>
+</table>
+</form>
+</center>
+</body>
+</html>
