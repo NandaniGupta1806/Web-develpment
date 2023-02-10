@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <style>
+        *{
+        font-size:62.5%;
+    }
+    .header{
+        font-size: 5rem;
+        text-align: center;
+    }
+    table tr td{
+        font-size: 3.5rem;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="header">To calculate Simple Interest </h1><br>
+  <div>
+    
+    <table  BORDER="10" width="70%" align="center" Height="90%" cellspacing="30%" cellpaddling="10" bgcolor="rgb(209, 202, 50)">
+            <tr>
+            <td>
+                <label for="principal">Enter the Principal amount :</label>
+            </td>
+            <td>
+                <input type="text" id="principal" name="principal"></td>
+         </tr>
+        <tr>
+            <td>
+                <label for="rate">Enter the Rate of Interest :</label>
+            </td>
+            <td>
+                <input type="text" id="rate" name="rate"></td>
+           </tr>
+           <tr>
+            <td>
+                <label for="time">Enter the Time :</label>
+            </td>
+            <td>
+                <input type="text" id="time" name="time"></td>
+           </tr>
+           <tr>
+            <td id="symbol"></td>
+            <td id="value"></td>
+           </tr>
+           <tr>
+            <td></td>
+            <td align="left">
+                <input type="button" value="Reset" onclick="reset_data()">
+                <input type="button" value="Calculate" onclick="calc_si()">
+            </td>
+           </tr>
+        </table>
+    </div>
+    <script>
+        function calc_si(){
+          let  p = parseInt(document.getElementById('principal').value);
+           let r = parseInt(document.getElementById('rate').value);
+            let t = parseInt(document.getElementById('time').value);
+            console.log(t);
+            si=(p*r*t)/100;
+            document.getElementById('symbol').innerHTML="Simple Interest";
+            document.getElementById('value').innerHTML="Rs. ";
+            document.getElementById('value').innerHTML +=si;
+        }
+        function reset_data(){
+            document.getElementById("principal").value="";
+            document.getElementById("rate").value="";
+            document.getElementById("time").value="";
+            document.getElementById("symbol").innerHTML="";
+            document.getElementById("value").innerHTML="";
+        }
+    </script>
+</body>
+</html>
