@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <style>
+        *{
+            font-size: 62.5%;
+        }
+        .header{
+            font-size: 4rem;
+            text-align: center;
+        }
+        table tr td{
+        font-size: 3rem;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1 class="header">Table</h1>
+    <div>
+        <table  BORDER="5" width="50%" align="center" Height="90%" cellspacing="30%" cellpaddling="10" bgcolor="green">
+             <tr>
+                <td>
+                    <label for="table"> Number : </label>
+                </td>
+                 <td>
+                    <input type="text" id="table" name="table">
+                 </td> 
+            </tr>
+            <tr>
+                <td id="table_label"></td>
+                <td id="table_show"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="left">
+                    <input type="button" value="Table" onclick="calc_table()">
+                    <input type="button" value="Reset" onclick="reset_data()">
+                 </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function calc_table(){
+            let n =parseInt(document.getElementById("table").value);
+            document.getElementById("table_show").innerHTML='';
+            let t;
+            for(let i=1;i<=10;i++){
+                t=n*i;
+                 document.getElementById("table_label").innerHTML= 'Table of ';
+                document.getElementById("table_label").innerHTML+= n;
+                document.getElementById("table_show").innerHTML+= t +'<br>';
+            }
+           
+        }
+        function reset_data(){
+            document.getElementById('table').value='';
+            document.getElementById("table_label").innerHTML ="";
+            document.getElementById("table_show").innerHTML ="";
+        }
+    </script>
+</body>
+</html>
