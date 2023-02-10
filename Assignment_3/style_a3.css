@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif,'Signika' , sans-serif;
+}
+body{
+    /* background-image: url("/assests/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+}
+header{
+    height: 10vh;
+    background-color: rgb(24, 17, 17);
+    border: 1px solid rgb(17, 2, 2);
+    border-radius: 20px 20px 0px 0px;
+}
+ header nav ul {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 30px;
+    width: auto;
+}
+li{
+    margin: 10px;
+    padding: 10px 25px;
+    list-style: none;
+}
+a{
+    color: rgb(229, 224, 224);
+    text-decoration: none;
+}
+a:hover{
+    font-size: 30px;
+    color: rgb(11, 11, 32);
+    background-color: rgb(238, 231, 231);
+}
+.button1{
+    padding: 5px 25px;
+    background-color:rgba(221, 19, 247, 0.881) ;
+    color: rgb(250, 245, 245);
+    border: 0;
+    border-radius: 5px;
+    margin-left: 550px;
+}
+main{
+    height: 90vh;
+    background-image: url("/assests/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 200px;
+    
+}
+.main{
+   padding: 100px 250px;
+   display: block;
+   align-items: center;
+   /* justify-content: space-between; */
+
+}
+h1{
+    
+    font-size: 4rem;
+    color: rgb(250, 245, 245);
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.3rem;
+    color:rgb(250, 245, 245) ;
+    margin-bottom:20px
+}
+.button2{
+    background-color:rgba(221, 19, 247, 0.881) ;
+    color: rgb(250, 245, 245);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+main button{
+    margin-left: 200px;
+}
+ button:hover{
+    background-color: rgb(52, 55, 61);
+}
