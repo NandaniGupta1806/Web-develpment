@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+}
+header{
+    margin: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    grid-template-rows: auto auto auto;
+justify-items: center;
+row-gap: 20px;
+}
+.hi{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+}
+h3{
+    color: yellow;
+}
+.project{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.project h3{
+    color: #ffffff;
+}
+.project p{
+    margin-bottom: 20px;
+}
+footer{
+    display: grid;
+    justify-items: center;
+}
+footer h3{
+    color:#ffffff;
+}
+footer > div{
+    margin: 20px;
+}
